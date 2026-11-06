@@ -17,7 +17,7 @@
 <header class="site-header">
 	<div class="container">
 		<a class="crest" href="#"><span class="crest__mark">K</span><span class="crest__name">KARAKARA</span></a>
-		<nav class="site-nav"><a href="#event">Next Event</a><a href="#commandments">Commandments</a></nav>
+		<nav class="site-nav"><a href="#event">Next Event</a><a href="#commandments">Commandments</a><a href="#sanctum">&#128274; Members</a></nav>
 	</div>
 </header>
 
@@ -98,6 +98,43 @@
 			</ol>
 		</div>
 	</section>
+
+	<!-- ============ MEMBERS-ONLY AREA (placeholder) ============
+	     NOTE: the login is a dummy. It checks nothing and sends nothing anywhere.
+	     Real hidden content must NOT be put on this static site until real auth exists. -->
+	<section id="sanctum" class="section">
+		<div class="container">
+			<div class="section__head">
+				<div class="section__label">Members Only</div>
+				<h2 class="section__title">The Inner Sanctum</h2>
+				<p class="section__sub">Beyond these doors lie secrets unfit for the uninitiated.</p>
+				<div class="ornament">&#10070;</div>
+			</div>
+
+			<div class="sanctum">
+				<ul class="sanctum__vault" aria-hidden="true">
+					<li><span>&#128274;</span>The Hall of Shame</li>
+					<li><span>&#128274;</span>Minutes of the Council</li>
+					<li><span>&#128274;</span>The Photographic Evidence</li>
+					<li><span>&#128274;</span>The Ledger of Debts</li>
+				</ul>
+
+				<form class="login" id="login-form" autocomplete="off" novalidate>
+					<h3 class="login__title gold-text">Present Your Credentials</h3>
+					<label class="login__field">
+						<span>Member name</span>
+						<input type="text" name="member" required>
+					</label>
+					<label class="login__field">
+						<span>Secret word</span>
+						<input type="password" name="secret" required>
+					</label>
+					<button class="login__btn" type="submit">Enter the Sanctum</button>
+					<p class="login__msg" id="login-msg" role="status" aria-live="polite"></p>
+				</form>
+			</div>
+		</div>
+	</section>
 </main>
 
 <footer class="site-footer">
@@ -109,5 +146,6 @@
 </footer>
 
 <script src="countdown.js"></script>
+<script src="login.js"></script>
 </body>
 </html>
