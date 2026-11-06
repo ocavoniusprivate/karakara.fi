@@ -210,3 +210,14 @@ a:hover { color: var(--gold-light); }
   .crest__name { display: none; }
   .countdown__lbl { letter-spacing: .12em; }
 }
+
+/* ---------- Work-in-progress banner (remove when site is final) ---------- */
+.wip-banner {
+  text-align: center;
+  padding: .45rem 1rem;
+  background: repeating-linear-gradient(-45deg, var(--oxblood) 0 14px, var(--oxblood-2) 14px 28px);
+  border-bottom: 1px solid var(--gold-dark);
+  color: var(--gold-light);
+  font-family: var(--label); text-transform: uppercase;
+  letter-spacing: .3em; font-size: .72rem;
+}
