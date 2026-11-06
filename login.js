@@ -5,10 +5,10 @@
   if (!form) return;
 
   var replies = [
-    'The doors remain sealed. The Sanctum opens soon, gentlemen.',
+    'The doors remain sealed. Kintklubben opens soon, gentlemen.',
     'Access denied. The butler does not recognise you.',
     'Patience. The Council has not yet forged the keys.',
-    'Nice try. The Sanctum is still under construction.'
+    'Nice try. Kintklubben is still under construction.'
   ];
   var n = 0;
 
